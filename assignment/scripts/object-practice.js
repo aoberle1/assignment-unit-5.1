@@ -16,6 +16,7 @@ const me = {
   shoeCount: 4,
   favThreeFoods: [ 'Apples', 'Bananas', 'Dragonfruit' ]
 };
+// console log to display properties of object me
 console.log('A little about me:', me);
 
 /* 2. Accessing object properties.
@@ -24,6 +25,7 @@ console.log('A little about me:', me);
     created above to set its value. 
   - Console.log fullName
 */
+// creating variable called fullName, uses .operator to access properties of me object
 let fullName = me.firstName + ' ' + me.lastName;
 console.log( 'My full name is:', fullName );
 
@@ -33,7 +35,9 @@ console.log( 'My full name is:', fullName );
   - Console.log your first favorite food
   - Console.log your last favorite food 
 */
+// using array index value to log first food in array property of object
 console.log( 'My first favorite food is:', me.favThreeFoods[0] );
+// using array length to find last index of array property of object
 console.log( 'My last favorite food is:', me.favThreeFoods[me.favThreeFoods.length-1])
 
 
@@ -46,6 +50,7 @@ console.log( 'My last favorite food is:', me.favThreeFoods[me.favThreeFoods.leng
 console.log( `We currently have ${me.shoeCount} pairs of shoes!`);
 // adding 1 to the property of me.shoeCount
 me.shoeCount = me.shoeCount + 1
+// console log to display our updated shoeCount property
 console.log( `We got another pair of shoes so now we have ${me.shoeCount} pairs of shoes!` );
 
 /* 5. Add a new property to an existing object.
@@ -54,5 +59,8 @@ console.log( `We got another pair of shoes so now we have ${me.shoeCount} pairs 
   - Cool huh? It works, even though it wasn't there before
   - Console.log your object
 */
-me.favColor = 'Blue';
+// using .operator to assign new object property
+me.favoriteColor = 'Blue';
+// console logging new property added to object
 console.log( me );
+console.log( `My favorite color is ${me.favoriteColor}`)
