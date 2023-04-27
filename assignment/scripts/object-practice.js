@@ -49,6 +49,7 @@ console.log( 'My last favorite food is:', me.favThreeFoods[me.favThreeFoods.leng
 */
 console.log( `We currently have ${me.shoeCount} pairs of shoes!`);
 // adding 1 to the property of me.shoeCount (also works with incrementing using ++ rather than +1)
+// shorthand of me.shoeCount++ also accomplishes same task
 me.shoeCount = me.shoeCount + 1
 // console log to display our updated shoeCount property
 console.log( `We got another pair of shoes so now we have ${me.shoeCount} pairs of shoes!` );
